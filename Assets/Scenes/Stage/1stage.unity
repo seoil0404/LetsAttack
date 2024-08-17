@@ -239,11 +239,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3480159208406869938, guid: 7b0bbf35fe5e55c48a8d3ba1c5acd333, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 118839833}
   m_SourcePrefab: {fileID: 100100000, guid: 7b0bbf35fe5e55c48a8d3ba1c5acd333, type: 3}
+--- !u!1 &118839832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3480159208406869938, guid: 7b0bbf35fe5e55c48a8d3ba1c5acd333, type: 3}
+  m_PrefabInstance: {fileID: 118839831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &118839833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118839832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0.43463376, z: -0.000001847744}
 --- !u!1001 &422024902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,7 +346,7 @@ PrefabInstance:
     - target: {fileID: -811924532699479623, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1646154273}
     - target: {fileID: -811924532699479623, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
       propertyPath: chaseRange
       value: 5
@@ -1331,7 +1361,7 @@ PrefabInstance:
     - target: {fileID: -811924532699479623, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1646154273}
     - target: {fileID: -811924532699479623, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
       propertyPath: chaseRange
       value: 5
@@ -1589,6 +1619,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
+--- !u!4 &1646154273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8295193861423398908, guid: 3e78747dcd99b7849af02df6d164dbd2, type: 3}
+  m_PrefabInstance: {fileID: 1400070100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1698518838
 GameObject:
   m_ObjectHideFlags: 0

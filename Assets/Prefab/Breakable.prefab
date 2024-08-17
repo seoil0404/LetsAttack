@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5282325953321217538}
   - component: {fileID: 1118349616069122343}
   - component: {fileID: 1658708361096247802}
-  - component: {fileID: 6603030930989830729}
+  - component: {fileID: -5168978934141845745}
   m_Layer: 8
   m_Name: Breakable
   m_TagString: Untagged
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 159918, guid: 35d65c080ccb1d24ca52fdf171e4d1bb, type: 3}
   DestroyDelay: 0.25
---- !u!64 &6603030930989830729
-MeshCollider:
+--- !u!65 &-5168978934141845745
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,7 +117,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3482897971593640056, guid: 914b17a0353115f43991dc5af3f44be3, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1, z: 2}
+  m_Center: {x: 0, y: 0.43463376, z: -0.000001847744}
