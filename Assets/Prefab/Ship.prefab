@@ -49,8 +49,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffcb8f36e9ae864badc9930ecd24ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joy: {fileID: 0}
+  smoothRotationTime: 0
+  smoothMoveTime: 0
+  moveSpeed: 0
+  joy: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230, type: 3}
   speed: 2
+  joystickPrefab: {fileID: 3881087803549984437, guid: ec536a7718376554185e4a856d5ae230, type: 3}
 --- !u!54 &-1387544103427911041
 Rigidbody:
   m_ObjectHideFlags: 0
