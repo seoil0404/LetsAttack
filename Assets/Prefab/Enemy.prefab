@@ -101,7 +101,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1457665053825350944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6, y: 1.07, z: 1.65}
+  m_Size: {x: 1.16, y: 1.15, z: 3.06}
   m_Center: {x: 0, y: -0.03, z: 0}
 --- !u!114 &4631131709822730245
 MonoBehaviour:
@@ -199,7 +199,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShip
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9061950457009765319, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 2518343875212720613, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 1318420251766526512, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 7881576327791525727, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 2694198257430613554, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 3268388149050657197, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 2438628643057135512, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
+    - {fileID: 1616185946963705877, guid: 18c872e5728c5a54dba0e4434f330f28, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
