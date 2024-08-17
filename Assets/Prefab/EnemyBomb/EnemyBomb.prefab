@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsReflect: 0
-  ReflectCount: 4
+  ReflectCount: 1
   explosion: {fileID: 159918, guid: 35d65c080ccb1d24ca52fdf171e4d1bb, type: 3}

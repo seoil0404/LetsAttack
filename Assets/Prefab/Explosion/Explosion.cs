@@ -7,6 +7,7 @@ public class Explosion : MonoBehaviour
     public float ExplosionTime;
     private void Awake()
     {
+        GetComponent<Sound_Controller>().BombSound();
         StartCoroutine(AutoDestroy());
     }
 

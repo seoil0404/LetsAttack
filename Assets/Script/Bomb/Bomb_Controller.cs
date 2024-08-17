@@ -7,12 +7,25 @@ public class Bomb_Controller : MonoBehaviour
     public bool IsReflect;
     public int ReflectCount = 4;
     public GameObject explosion;
+    private bool firstTouch = true;
     private void OnCollisionEnter(Collision collision)
     {
-        if(!IsReflect || ReflectCount-- == 0)
+        if(firstTouch)
         {
-            Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
-            Destroy(gameObject);
+            firstTouch = false;
+            if (!IsReflect || ReflectCount-- == 0)
+            {
+                Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            if (!IsReflect || ReflectCount-- == 0)
+            {
+                Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
+                Destroy(gameObject);
+            }
         }
     }
 }

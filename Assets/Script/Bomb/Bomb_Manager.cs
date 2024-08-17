@@ -14,6 +14,7 @@ public class Bomb_Manager : MonoBehaviour
     private void GenerateBomb(float rotate)
     {
         GameObject bomb = Instantiate(BombPrefab);
+        bomb.transform.position = this.transform.position;
         bomb.GetComponent<Bomb_Controller>().IsReflect = IsReflect;
         bomb.GetComponent<Rigidbody>().AddForce(new Vector3(Mathf.Sin(rotate) * BombSpeed,
                                                           0, Mathf.Cos(rotate) * BombSpeed), ForceMode.Impulse);
@@ -73,7 +74,7 @@ public class Bomb_Manager : MonoBehaviour
     {
         BombMultiply = true;
         BombSeperate = true;
-        IsReflect = true;
+        //IsReflect = true;
         Shoot();
     }
 }
