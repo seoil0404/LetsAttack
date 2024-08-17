@@ -11,8 +11,8 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.gameObject.layer == 6)
         {
-            Debug.Log('!');
             IsDestroy = true;
+            Destroy(gameObject, 0.5f);
         }
     }
 

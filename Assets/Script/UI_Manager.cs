@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class UI_Manager : MonoBehaviour
 {
     public int Health = 3;
@@ -27,5 +27,6 @@ public class UI_Manager : MonoBehaviour
     {
         InGameObject.SetActive(true);
         StartGameObject.SetActive(false);
+        SceneManager.LoadScene("1stage");
     }
 }
