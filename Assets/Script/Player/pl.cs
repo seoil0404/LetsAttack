@@ -30,7 +30,7 @@ public class pl : MonoBehaviour
 
     private void Awake()
     {
-        joy = Instantiate(joystickPrefab).GetComponent<VariableJoystick>();
+         joy = GameObject.Find("Variable Joystick").GetComponent<VariableJoystick>();
         rigid = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
     }
