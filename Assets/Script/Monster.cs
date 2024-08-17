@@ -10,7 +10,8 @@ public class Monster : MonoBehaviour
 {
     public Transform target;             // 타겟(플레이어) Transform
     public float attackRange = 4f;       // 공격 시작 거리
-    public float attackDelay = 1f;       // 공격 딜레이 시간
+    public float attackDelay = 1f;
+    public float chaseRange = 10f;       // 추적 시작 거리// 공격 딜레이 시간
     private float lastAttackTime;        // 마지막으로 공격한 시간 기록
 
     private NavMeshAgent agent;          // NavMeshAgent 컴포넌트
@@ -31,13 +32,22 @@ public class Monster : MonoBehaviour
           //  Debug.Log("Within attack range, stopping agent"); // 공격 범위 내에 들어왔음을 로그로 표시
             Attack();
         }
-        else
+        else if (distanceToTarget <= chaseRange)
         {
-           // Debug.Log("Chasing target"); // 추적 상태 로그로 표시
+            // 타겟이 추적 범위 내에 있을 때
             Chase();
         }
+        else
+        {
+            // 타겟이 범위 밖으로 벗어났을 때
+            StopChase();
+        }
     }
-
+    void StopChase()
+    {
+        agent.isStopped = true; // 에이전트 멈추도록 설정
+     
+    }
     void Chase()
     {
         agent.isStopped = false; // 에이전트 움직이도록 설정
