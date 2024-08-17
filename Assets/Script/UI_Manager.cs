@@ -28,6 +28,6 @@ public class UI_Manager : MonoBehaviour
         Debug.Log("?");
         InGameObject.SetActive(true);
         StartGameObject.SetActive(false);
-        SceneManager.LoadScene("1stage");
+        SceneManager.LoadScene("3stage");
     }
 }
