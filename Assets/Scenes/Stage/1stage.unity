@@ -105,15 +105,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 3
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.6
+    agentHeight: 0.2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.2
     manualTileSize: 0
     tileSize: 256
     buildHeightMesh: 0
@@ -278,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5794427264068921657, guid: 7a9d4cff83e810a43b184adf9d00cd0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5794427264068921657, guid: 7a9d4cff83e810a43b184adf9d00cd0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -559,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.26
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalPosition.y
@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.96
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalRotation.w
@@ -617,6 +617,10 @@ PrefabInstance:
     - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_Name
       value: Rock1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4663317066019566712, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_LocalScale.x
@@ -789,6 +793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 3007083031978966926, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -928,6 +936,10 @@ PrefabInstance:
     - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_Name
       value: Rock1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4663317066019566712, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_LocalScale.x
@@ -1246,7 +1258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8107624546686036266, guid: ae00ead2789347f42afd4ed27b21080f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 8107624546686036266, guid: ae00ead2789347f42afd4ed27b21080f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1307,7 +1319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.96
+      value: -8.82
       objectReference: {fileID: 0}
     - target: {fileID: 2085641413262263930, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1550,6 +1562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock3
       objectReference: {fileID: 0}
+    - target: {fileID: 635628870274076048, guid: 48b7ab55df83d0641ae4afc90914e054, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3904078094516089948, guid: 48b7ab55df83d0641ae4afc90914e054, type: 3}
       propertyPath: m_LocalScale.z
       value: 2
@@ -1765,8 +1781,8 @@ Transform:
   m_GameObject: {fileID: 1698518838}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.127283, y: -0.7, z: -3.4173753}
-  m_LocalScale: {x: 40, y: 1, z: 40}
+  m_LocalPosition: {x: -16.127283, y: -0.7, z: -0.4}
+  m_LocalScale: {x: 28, y: 1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1877,6 +1893,10 @@ PrefabInstance:
     - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_Name
       value: Rock1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4663317066019566712, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_LocalScale.z
@@ -2090,6 +2110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 3007083031978966926, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2160,6 +2184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2
       objectReference: {fileID: 0}
+    - target: {fileID: 3007083031978966926, guid: 15d743e70ff071d4aaccde76d1167351, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2197,6 +2225,10 @@ PrefabInstance:
     - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_Name
       value: Rock1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480159208406869938, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4663317066019566712, guid: e83c686ee6ebfe5469b2cd9ea77b8b00, type: 3}
       propertyPath: m_LocalScale.x
