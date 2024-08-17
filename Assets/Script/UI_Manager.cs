@@ -25,6 +25,7 @@ public class UI_Manager : MonoBehaviour
 
     public void GameStart()
     {
+        Debug.Log("?");
         InGameObject.SetActive(true);
         StartGameObject.SetActive(false);
         SceneManager.LoadScene("1stage");
