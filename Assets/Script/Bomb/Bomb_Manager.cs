@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Bomb_Manager : MonoBehaviour
 {
+  
     public GameObject BombPrefab;
     public bool IsReflect = false;
     private bool BombSeperate = false;
@@ -11,6 +13,8 @@ public class Bomb_Manager : MonoBehaviour
     public float fixAngle;
     public float BombSpeed;
     public float BombMultiplySpeed;
+
+    private Button button;
     private void GenerateBomb(float rotate)
     {
         GameObject bomb = Instantiate(BombPrefab);
@@ -69,12 +73,16 @@ public class Bomb_Manager : MonoBehaviour
             _Shoot((transform.rotation.eulerAngles.y) * Mathf.Deg2Rad);
         }
     }
-
-    private void Start()
+    void OnButtonClick()
     {
-        BombMultiply = true;
-        BombSeperate = true;
-        //IsReflect = true;
         Shoot();
+    }
+    void Awake()
+    {
+        // 버튼 컴포넌트를 가져옵니다.
+        button = GetComponent<Button>();
+
+        // 버튼이 눌러졌을 때 실행할 함수 연결
+        button.onClick.AddListener(OnButtonClick);
     }
 }
