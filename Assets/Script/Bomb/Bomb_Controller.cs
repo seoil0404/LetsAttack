@@ -8,6 +8,10 @@ public class Bomb_Controller : MonoBehaviour
     public int ReflectCount = 4;
     public GameObject explosion;
     private bool firstTouch = true;
+    private void Awake()
+    {
+        StartCoroutine(AutoDestroy());
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(firstTouch)
@@ -27,5 +31,11 @@ public class Bomb_Controller : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    IEnumerator AutoDestroy()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 }
