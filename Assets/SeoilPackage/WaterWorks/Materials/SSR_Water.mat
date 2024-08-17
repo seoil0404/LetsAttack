@@ -93,7 +93,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 1
     m_Colors:
-    - _Color: {r: 0.15305953, g: 0.50804275, b: 0.6855345, a: 1}
+    - _Color: {r: 0.16970451, g: 0.3212743, b: 0.3962264, a: 1}
     - _EdgeColor: {r: 0.25098038, g: 0.32941175, b: 0.28627446, a: 1}
     - _Edge_Color: {r: 0.2507565, g: 0.3301887, b: 0.28799033, a: 1}
     - _FoamColor: {r: 4, g: 4, b: 4, a: 1}

@@ -24,16 +24,16 @@ public class Monster : MonoBehaviour
     void Update()
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
-        Debug.Log("Distance to Target: " + distanceToTarget); // 디버깅용 로그 추가
+       // Debug.Log("Distance to Target: " + distanceToTarget); // 디버깅용 로그 추가
 
         if (distanceToTarget <= attackRange)
         {
-            Debug.Log("Within attack range, stopping agent"); // 공격 범위 내에 들어왔음을 로그로 표시
+          //  Debug.Log("Within attack range, stopping agent"); // 공격 범위 내에 들어왔음을 로그로 표시
             Attack();
         }
         else
         {
-            Debug.Log("Chasing target"); // 추적 상태 로그로 표시
+           // Debug.Log("Chasing target"); // 추적 상태 로그로 표시
             Chase();
         }
     }
