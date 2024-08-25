@@ -63,7 +63,8 @@ public class Monster : MonoBehaviour
         if (Time.time > lastAttackTime + attackDelay)
         {
             lastAttackTime = Time.time; // 마지막 공격 시간 업데이트
-            Debug.Log("hit"); // 공격 발생 확인
+            GetComponent<Bomb_Manager>().Shoot();
         }
     }
+
 }

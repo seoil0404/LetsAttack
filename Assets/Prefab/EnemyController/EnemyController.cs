@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
         if(collision.gameObject.layer == 6)
         {
             IsDestroy = true;
+            GameObject.Find("UI_Manager").GetComponent<UI_Manager>().ClearEnemy();
             Destroy(gameObject, 0.5f);
         }
     }

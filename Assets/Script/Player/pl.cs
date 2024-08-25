@@ -54,5 +54,12 @@ public class pl : MonoBehaviour
         }
         
     }
-  
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer == 7)
+        {
+            GameObject.Find("UI_Manager").GetComponent<UI_Manager>().ReduceHealth();
+        }
+    }
 }

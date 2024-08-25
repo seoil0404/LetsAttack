@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : Bomb_Manager
+public class Box : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
         // 충돌한 오브젝트가 특정 태그를 가지고 있는지 확인
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.name == "Ship")
         {
            
                 // 함수 배열 생성
@@ -20,17 +20,17 @@ public class Box : Bomb_Manager
 
             void FunctionOne()
             {
-                Skill1();
+                GameObject.Find("Ship").GetComponent<Bomb_Manager>().Skill1();
             }
 
             void FunctionTwo()
             {
-                Skill2();
+                GameObject.Find("Ship").GetComponent<Bomb_Manager>().Skill2();
             }
 
             void FunctionThree()
             {
-                Skill3();
+                GameObject.Find("Ship").GetComponent<Bomb_Manager>().Skill3();
             }
             // 이 오브젝트를 삭제
             Destroy(gameObject);

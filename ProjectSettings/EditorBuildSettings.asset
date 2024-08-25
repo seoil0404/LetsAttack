@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SeoilsTestScene.unity
     guid: ee50a03211e6f5f4d82783197926d4d5
   - enabled: 1
@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage/2stage.unity
     guid: a97afcad69d1aa64dafec52e47611247
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: a3a46e71ba11d354db1569aff81a2e6b
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: f4da90932410b8343b0cd9b633cdb206
   m_configObjects: {}

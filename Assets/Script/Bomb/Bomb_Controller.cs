@@ -4,33 +4,27 @@ using UnityEngine;
 
 public class Bomb_Controller : MonoBehaviour
 {
-    public bool IsReflect;
+    public bool IsReflect = false;
     public int ReflectCount = 4;
     public GameObject explosion;
-    private bool firstTouch = true;
     private void Awake()
     {
         StartCoroutine(AutoDestroy());
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(firstTouch)
-        {
-            firstTouch = false;
-            if (!IsReflect || ReflectCount-- == 0)
+        bool flag1 = !IsReflect || --ReflectCount <= 0;
+        bool flag2 = collision.gameObject.layer == 9 || collision.gameObject.layer == 10;
+            if (flag1 && collision.gameObject.layer != 11)
             {
-                Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
+                Debug.Log(collision.gameObject.name);
+                if(flag2) Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
                 Destroy(gameObject);
             }
-        }
-        else
-        {
-            if (!IsReflect || ReflectCount-- == 0)
+            else if(IsReflect && flag2)
             {
-                Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
-                Destroy(gameObject);
+            Instantiate(explosion).GetComponent<Transform>().position = this.transform.position;
             }
-        }
     }
 
     IEnumerator AutoDestroy()

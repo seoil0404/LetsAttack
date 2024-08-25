@@ -14,9 +14,9 @@ TagManager:
   - Bomb
   - EnemyBomb
   - Breakable
-  - 
-  - 
-  - 
+  - Enemy
+  - Mine
+  - Bottom
   - 
   - 
   - 
